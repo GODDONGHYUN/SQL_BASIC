@@ -46,7 +46,6 @@ SELECT observe_date,
  GROUP BY observe_date 
  HAVING avg > 5.5;
 
-
 -- 요건 에러발생 
 SELECT observe_date,
  AVG(speed_80m) 
