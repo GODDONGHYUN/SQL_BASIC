@@ -97,4 +97,5 @@ SELECT * FROM jeju LIMIT 10;
 
 # LIMIT 제외 레코드 갯수, 갯수  : 상위에서 제외 레코드 갯수만큼 제외후 갯수만큼의 데이터만 보여줌 
 
+
 SELECT * FROM jeju LIMIT 10, 3;
