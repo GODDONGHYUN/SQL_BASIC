@@ -29,7 +29,7 @@ reply_status,
 title,
 writer_id,
 write_datetime,
-view_count
+view_countqna
 FROM qna
 ORDER BY reception_number DESC;
 
