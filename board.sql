@@ -29,7 +29,7 @@ CREATE INDEX idx_writer_email ON board (writer_email);
 
 CREATE TABLE favorite (
     user_email VARCHAR(50),
-    board_number INT AUTO_INCREMENT,
+    board_number INT ,
     PRIMARY KEY (user_email, board_number),
     FOREIGN KEY (user_email)
     REFERENCES user (email),
@@ -42,7 +42,7 @@ CREATE INDEX idx_board_number ON favorite (board_number);
 
 CREATE TABLE board_image (
     sequence INT AUTO_INCREMENT NOT NULL,
-    board_number INT  AUTO_INCREMENT NOT NULL,
+    board_number INT  NOT NULL,
     image_url TEXT NULL,
     PRIMARY KEY (sequence),
     FOREIGN KEY (board_number)
